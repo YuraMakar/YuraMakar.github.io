@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto Slab', serif;
+    font-size: 7vw;
+    background: #200122;
+    background: -webkit-linear-gradient(-60deg, #6f0000, #200122);
+    background: linear-gradient(-60deg, #6f0000, #200122);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: flow 30s ease-in-out infinite;
+}
+
+@keyframes flow {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
